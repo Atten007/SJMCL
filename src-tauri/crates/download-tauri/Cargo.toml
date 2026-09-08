@@ -1,0 +1,18 @@
+[package]
+name = "tauri-plugin-download"
+version = "0.1.0"
+edition = "2021"
+links = "tauri-plugin-download"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+tauri-plugin = { workspace = true, features = ["build"] }
+
+[dev-dependencies]
+
+[dependencies]
+tauri = { workspace = true }
+download-core = { path = "../download-core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }

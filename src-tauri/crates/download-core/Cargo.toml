@@ -1,0 +1,21 @@
+[package]
+name = "download-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+reqwest = { workspace = true }
+sha2 = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+futures-util = { workspace = true }
+tracing = { workspace = true }
+rusqlite = { workspace = true }
+async-channel = "2"
+bytes = "1.12.1"
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
